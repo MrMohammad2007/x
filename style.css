@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #181d25;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d30000;
+  border-radius: 10px;
+}
+
+/* Others */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #d30000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #d30000;
+}
+
+.searchTerm:focus{
+  color: #d30000;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #d30000;
+  background: #d30000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
